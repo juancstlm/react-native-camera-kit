@@ -250,6 +250,10 @@ class CameraView: UIView {
             }
         }, onError: onError)
     }
+
+    func stopSession(){
+        camera.cameraRemovedFromSuperview()
+    }
     
     // MARK: - Private Helper
 

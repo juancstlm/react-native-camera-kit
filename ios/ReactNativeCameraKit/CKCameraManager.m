@@ -47,4 +47,6 @@ RCT_EXTERN_METHOD(checkDeviceCameraAuthorizationStatus:(RCTPromiseResolveBlock)r
 RCT_EXTERN_METHOD(requestDeviceCameraAuthorization:(RCTPromiseResolveBlock)resolve
                   reject:(__unused RCTPromiseRejectBlock)reject)
 
+RCT_EXTERN_METHOD(stopSesssion)
+
 @end

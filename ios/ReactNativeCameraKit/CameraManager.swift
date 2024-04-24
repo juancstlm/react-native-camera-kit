@@ -46,4 +46,12 @@ import Foundation
                                                 reject: @escaping RCTPromiseRejectBlock) {
         AVCaptureDevice.requestAccess(for: .video, completionHandler: { resolve($0) })
     }
+
+    @objc func stopSession() {
+        if (camera == nil) {
+            return
+        }
+        
+        camera.stopSession()
+    }
 }
